@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header CSS - Start*/
+
+.header {
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 180px;
+    background-color: #1f2937;
+
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.header li {
+    display: flex;
+    gap: 18px;
+}
+
+.header a {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+/* Header CSS - End */
+
