@@ -4,7 +4,14 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-style: roboto;
+}
+
+.divider {
+    height: 3rem;
+    background-color: #621708;
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 30%), inset 0 0.125em 0.5em rgb(0 0 0 / 45%);
 }
 
 /* Header CSS - Start*/
@@ -15,7 +22,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 180px;
-    background-color: #1f2937;
+    background-color: #000000;
 
 }
 
@@ -48,7 +55,7 @@
     display: flex;
     width: 100%;
     height: 480px;
-    background-color: #1f2937;
+    background-color: #242424;
     justify-content: space-around;
     align-items: center;
 }
@@ -84,8 +91,9 @@
 }
 
 .hero-container img {
-    max-width: 480px;
-    max-height: 240px;
+    padding: 16px;
+    max-height: 100%;
+    width: auto;
 }
 
 .info-container, .sub-container {
@@ -97,6 +105,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #dfdfdf;
 }
 
 .info-title {
@@ -108,7 +117,7 @@
 
 .info-display {
     display: flex;
-    gap: 18px;
+    gap: 48px;
 }
 
 .info-box {
@@ -120,11 +129,16 @@
 }
 
 .img-box {
-    min-width: 180px;
-    min-height: 180px;
+    width: 180px;
+    height: 180px;
     margin-bottom: 12px;
-    border: 4px solid #3882f6;
+    border: 4px solid #ff0000;
     border-radius: 0.5rem;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
 }
 
 .quote-container {
@@ -133,7 +147,7 @@
     justify-content: center;
     align-items: center;
     height: 360px;
-    background-color: #e5e7eb;
+    background-color: #dfdfdf;
 }
 
 .quote {
@@ -151,7 +165,7 @@
 }
 
 .sub-container {
-    background-color: #f9faf8;
+    background-color: #242424;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,13 +175,16 @@
     display: flex;
     width: 800px;
     height: 180px;
-    background-color: #3882f6;
+    background-color: #dfdfdf;
     justify-content: space-between;
+    border: #621708 solid 2px;
+    border-radius: 1rem;
     align-items: center;
 }
 
 .sub-msg {
-    color: #f9faf8;
+    color:#242424;
+    margin-left: 18px;
 }
 
 .button2 {
@@ -187,7 +204,7 @@
     justify-content: center;
     align-items: center;
     height: 60px;
-    background-color: #1f2937;
+    background-color: #000000;
     color: #e5e7eb;
     font-size: 18px;
 }
