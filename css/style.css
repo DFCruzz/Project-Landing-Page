@@ -27,19 +27,39 @@
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 32px;
+    font-family: 'Staatliches', cursive;
     color: #f9faf8;
 }
 
 .header li {
     display: flex;
-    gap: 18px;
+    gap: 60px;
 }
 
 .header a {
     color: #e5e7eb;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header a:hover {
+    color: #ff0000;
+}
+
+.credits-content {
+        display: none;
+        position: absolute;
+        color: #242424;
+        font-family: 'Oswald', sans-serif;
+        background-color: #dfdfdf;
+        min-width: 360px;
+        padding: 12px 12px;
+        right: 0;
+}
+.credits:hover .credits-content {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header CSS - End */
@@ -66,6 +86,7 @@
 
     .hero-text h1 {
         margin-bottom: 24px;
+        font-family: 'Staatliches', cursive;
         font-size: 48px;
         font-weight: bolder;
         color: #f9faf8;
@@ -118,8 +139,9 @@
 
 .info-title {
     font-size: 36px;
+    font-family: 'Staatliches', cursive;
     margin-bottom: 32px;
-    font-weight: bolder;
+    font-weight: bold;
     color: #1f2937;
 }
 
@@ -130,6 +152,8 @@
 
 .info-box {
     display: flex;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -142,6 +166,13 @@
     margin-bottom: 12px;
     border: 4px solid #ff0000;
     border-radius: 0.5rem;
+    transition-duration: 0.3s;
+}
+
+.img-box:hover {
+    cursor: pointer;
+    box-shadow: 0 0 40px #8f0000;
+    transform: scale(1.1);
 }
 
 .img-box img {
@@ -167,20 +198,23 @@
     justify-content: center;
     align-items: center;
     height: 360px;
+    gap: 30px;
     background-color: #dfdfdf;
 }
 
 .quote {
     color: #1f2937;
     font-size: 36px;
+    font-family: 'Oswald', sans-serif;
     font-weight: lighter;
     font-style: italic;
     text-align: center;
 }
 
 .quotee {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 0.3em;
     text-align: right;
 }
 
@@ -207,13 +241,22 @@
     display: flex;
     align-items: center;
     gap: 80px;
-    padding: 36px 48px;
+    padding: 28px 48px;
 }
 
 
 
 .sub-msg {
     color:#242424;
+}
+
+.sub-msg h1 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 0.1em;
+}
+
+.sub-msg p {
+    font-family: 'Oswald', sans-serif;
 }
 
 .sub-content button {
@@ -236,6 +279,10 @@
     cursor: pointer;
 }
 
+/* Body CSS - End */
+
+/* Footer CSS - Start */
+
 .footer {
     display: flex;
     justify-content: center;
@@ -244,7 +291,10 @@
     background-color: #000000;
     color: #e5e7eb;
     font-size: 18px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 0.2em;
 }
 
+/* Footer CSS - End */
 
 
